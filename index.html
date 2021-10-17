@@ -8,7 +8,7 @@
         <!-- CSS Files-->
         <link rel="stylesheet" type="text/css " href="asset/css/style.css">
     </head>
-    <body onload="wave.play()">
+    <body>
         <audio controls loop autoplay hidden="true">
             <source src="asset/music/base.mp3" type="audio/mpeg" >
           </audio>
@@ -19,10 +19,4 @@
             <img id="name" src="asset/images/name.png" alt="name">
         </div>
     </body>
-    <script src="asset/js/circular-audio-wave.js">
-    </script>
-    <script>
-        let wave = new CircularAudioWave(document.getElementById('example'));
-                wave.loadAudio('asset/music/base.mp3');
-    </script>
 </html>
