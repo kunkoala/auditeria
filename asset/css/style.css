@@ -1,21 +1,56 @@
 body {
-    background-color: #212121;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    overflow: hidden;
+    background-color: #F7F6F2;
+    margin: 0px;
+}
+
+.main-header {
+    margin: 0 auto 35px;
+}
+.top-container {
+    position: relative;
+    width: 100%;
+} 
+
+.main-navbar {
+    position: relative;
+    font-size: 25px;
+    font-family: 'Convergence', sans-serif;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.navbar {
+    padding: 0;
+    text-align: right;
+    width: 100%;
+}
+
+.main-navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+}
+
+.main-navbar .navbar li a {
+    margin: 0 40px;
+    color: #212121;
+    text-decoration: none;
+}
+img.navbar-logo {
+    position: absolute;
+    width: 200px;
+    padding: 0;
+}
+
+.middle-container {
     text-align: center;
+    padding: 60px;
 }
 
-
-.main{
-    display: block;
-    margin: auto;
-}
-
-.logo {
-    width: 25%;
-    margin-top: 5em;
+.auditeria-logo {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
     -webkit-animation: rotation 4s infinite linear;
 }
 @-webkit-keyframes rotation {
@@ -28,51 +63,14 @@ body {
 }
 
 #name{
-    display: block;
-    margin: 0 auto;
-    margin-top: 5em;
-    width: 32%;
+    
 }
 
 
 @media (max-width: 650px) {
-    body{
-        background-color: #212121;
-    }
-    .main {
-        margin-top: 10%;
-        text-align: center;
-
-    }
-
-    .logo{
-        width: 50%;
-        margin-bottom: 5em;
-    }
-    #name{
-        width: 40%;
-        margin-top: 10em;
-        
-    }
+   
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    body{
-        background-color: #212121;
-    }
-    .main {
-        margin-top: 2%;
-        text-align: center;
-
-    }
-
-    .logo{
-        width: 35%;
-        margin-bottom: 5em;
-    }
-    #name{
-        width: 25%;
-        margin-top: 5em;
-        
-    }
+    
 }

@@ -1,28 +1,49 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>AUDITERIA</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="asset/images/logo.ico" type="image/icon type">
-        <!-- CSS Files-->
-        <link rel="stylesheet" type="text/css " href="asset/css/style.css">
-    </head>
-    <body onload="wave.play()">
-        <audio controls loop autoplay hidden="true">
-            <source src="asset/music/base.mp3" type="audio/mpeg" >
-          </audio>
-        <div class="main" > 
-            <div id="example">
-                <img class="logo" src="asset/images/logo.png" alt="LOGO">
-            </div>
-            <img id="name" src="asset/images/name.png" alt="name">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">    
+    <title>Auditeria</title>
+</head>
+
+<body>
+    <div class="top-container">
+        <header class="main-header">
+            <nav class="main-navbar">
+                <a href="">
+                    <img class="navbar-logo" src="asset/images/Asset 1.png" alt="">
+                </a>
+                <ul class="navbar">
+                    <li class>
+                        <a href="">Home</a>
+                    </li>
+                    <li class>
+                        <a href="">Soundbank</a>
+                    </li>
+                    <li class>
+                        <a href="">About Us</a>
+                    </li>
+                    <li class>
+                        <a href="">Help</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="middle-container">
+        <div class="auditeria-logo">
+            <img id="auditeria-logo" src="asset/images/logo.png" salt="">
         </div>
-    </body>
-    <script src="asset/js/circular-audio-wave.js">
-    </script>
-    <script>
-        let wave = new CircularAudioWave(document.getElementById('example'));
-                wave.loadAudio('asset/music/base.mp3');
-    </script>
+    </div>
+    <div class="bottom-container">
+
+    </div>
+    
+    
+</body>
 </html>
