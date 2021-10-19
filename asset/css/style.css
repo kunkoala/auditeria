@@ -1,38 +1,63 @@
+:root {
+    font-size: 1em;
+    background-color: #F7F6F2;
+    box-sizing: border-box;
+
+    --ff-primary: "PT Sans", sans-serif;
+    --ff-accent: 'Noto Sans', sans-serif;
+    --ff-alternate: 'Karla', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
 body {
     margin: 0;
 }
 
 .page-wrapper {
     margin: 0;
+    padding: 0;
     max-height: 100vw;
-    width: 100vw;
+    max-width: 100vw;
     background-color: #F7F6F2;
-    font-family: 'Convergence', sans-serif;
+    font-family: var(--ff-accent)
 }
 
-.main-header {
-    margin: 0 auto 35px;
-}
+
 
 /* ------------------------------ HEADER / TOP CONTAINER ----------------------------*/
 
-.main-navbar {
+.main-header {
     position: relative;
-    font-size: 25px;
-    padding: 15px;
+    margin: 0 auto 35px;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.name-logo {
+    margin-right: auto;
+}
+
+.main-navbar {
+    font-size: 1.5em;
+    padding: 0.8rem;
 }
 
 .navbar {
-    padding: 20px 0;
+    padding: 0.3em 0;
     margin-top: 0;
-    text-align: right;
     width: 100%;
 }
 
-.main-navbar ul li {
+.navbar li {
     list-style: none;
     display: inline-block;
-    margin: 0;
+    margin: 0; 
+    padding: 0.2em;
 }
 
 .navbar-link {
@@ -63,59 +88,84 @@ body {
     left: 0; 
 }
 
-img.navbar-logo {
-    position: absolute;
-    width: 230px;
-    padding: 0;
-}
-
 /* ------------------------------ MAIN CONTAINER ----------------------------*/
 
 .main-container {
-    text-align: center;
-    padding: 30px;
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .auditeria-logo {
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
-    -webkit-animation: rotation 4s infinite linear;
+    padding: 2em;
+    margin-bottom: 3.5em;
+    -webkit-animation: rotating 4s linear infinite;
 }
 
-@-webkit-keyframes rotation {
-    from {
-            -webkit-transform: rotate(0deg);
+#auditeria-logo {
+    width: 340px;
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
     }
-    to {
-            -webkit-transform: rotate(359deg);
+    to{
+        -webkit-transform: rotate(359deg);
     }
 }
 
 /* ------------------------------ BOTTOM CONTAINER ----------------------------*/
 
 .bottom-container {
-    margin-top: 55px;
-    display: block;
-    width: 100%;
-    height: 526px;
+    padding: 2em 8em;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
     background-color: #212121;
+    color: #F7F6F2;
 }
 
+.bottom-container img {
+    max-width: 350px;
+}
+
+.preview-1 {
+    flex: 1;
+    order: 2;
+}
+
+.preview-2 {
+    flex: 1;
+    order: 1;
+}
+
+.preview-3 {
+    flex: 1;
+    order: 3;
+}
+
+
+/* ------------------------------ FOOTER ----------------------------*/
+
 .copyright {
-    width: 100%;
+    width: 100vw;
     height: 30px;
     background-color: #e12bad;
-    clear: both;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F7F6F2;
+    
 }
 
 .copyright p {
-    text-align: center;
+    font-family: var(--ff-accent);
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
     text-transform: uppercase;
-    color: #F7F6F2;
-    font-size: 25px;
-    margin: 0;
 }
 
 @media (max-width: 650px) {
