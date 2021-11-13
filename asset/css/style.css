@@ -29,13 +29,17 @@ html, body {
 
 /* ------------------------------ HEADER / TOP CONTAINER ----------------------------*/
 
-.main-header {
+.navbarpc {
     position: relative;
     display: grid;
     grid-template-columns: 20% auto;
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 0 1em 1em;
+}
+
+.mobile {
+    display: none;
 }
 
 .name-logo {
@@ -136,17 +140,23 @@ html, body {
     margin: 0 auto;
 }
 
-.bottom-container img {
-    max-width: 320px;
-    
+.gambar {
+    width: 150%;
 }
 
-.preview-1 {
+.products-item {
+    padding: 1em;
     text-align: center;
-    flex: 1;
-    order: 2;
 }
 
+.product-info h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.product-img {
+    width: 20%;
+}
 
 /* ------------------------------ FOOTER ----------------------------*/
 
@@ -171,12 +181,15 @@ html, body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     /* ------------------------------ HEADER / TOP CONTAINER ----------------------------*/ 
+
     .navbar-link {
         font-size: 75%;
         margin: 0 25px;
     }
 
-
+    .mobile {
+        display: none;
+    }
     
     .navbar-link:after {
         background: none repeat scroll 0 0 transparent;
@@ -200,17 +213,22 @@ html, body {
 }
 
 
-@media (max-width: 650px) {
-    .main-header{
+@media (max-width: 690px) {
+    .navbarpc {
         display: none;
     }
+    
+    .mobile {
+        display: block;
+    }
 
-    .menu {
+    .menu-mobile {
         padding: 10px 0 0 0;
         display: grid;
         grid-template-columns: 20% auto 20%;
         text-align: center;
     }
+
 
     .name-mobile img{
         width: 50%;
@@ -223,15 +241,11 @@ html, body {
         position: fixed;
         width: 100%;
         height: 80%;
-        background-color: blue;
+        background-color: #eed87e;
     }
 
-    .main-navbar {
-        font-size: 1.5em;
-        padding: 0;
-    }
-    
     .navbar {
+        font-size: 2em;
         padding: 0;
         margin: 0;
         width: 100%;
