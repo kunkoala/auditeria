@@ -14,7 +14,9 @@ p {
 
 html, body {
     margin: 0;
+    max-width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .page-wrapper {
@@ -35,7 +37,7 @@ html, body {
     grid-template-columns: 20% auto;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em 0 1em 1em;
+    padding: 0.5em 1em 1em 1em;
 }
 
 .mobile {
@@ -135,7 +137,7 @@ html, body {
 
 .products {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns:auto 25% 25% 25% auto;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -166,9 +168,64 @@ html, body {
     height: 50px;
 }
 
+#preview1{
+    display: none;
+}
+#preview2{
+    display: block;
+}
+#preview3{
+    display: block;
+}
+#preview4{
+    display: block;
+}
+#preview5{
+    display: none;
+}
+
+
+    /*------------------- UJICOBA SLIDE ---------------------*/
+    .slide-back{
+        right: 0;
+        text-align: start;
+        padding-left: 2em;
+    }
+
+    .slide-next{
+        text-align: start;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: white;
+        color: #e12bad;
+      }
+
+
+
+
+
 /* ------------------------------ FOOTER ----------------------------*/
 
 .copyright {
+    margin: 0;
     width: 100vw;
     height: 30px;
     background-color: #e12bad;
@@ -224,10 +281,7 @@ html, body {
         padding: 2em 3em;
     }
 
-    .products {
-        grid-template-columns: 45% 45% 45%;
-        max-width: 90%;
-    }
+  
     
     .products-item {
         display: block;
@@ -248,12 +302,18 @@ html, body {
         font-size: 0.8em;
     }
     
+    .products-item p{
+        font-size: 0.5em;
+    }
     .product-info {
         padding: 1em;
         height: 50px;
     }
+   
+    .slide-back{
+        padding: 0;
+    }
 
-    
 }
 
 
@@ -334,6 +394,49 @@ html, body {
     #auditeria-logo {
     width: 200px;
     }
+
+    /* ===================================== BOTTOM CONTAINER ============================= */
+
+    .bottom-container {
+        padding: 2em 1em;
+    }
+    
+    .products-item {
+        display: block;
+        padding: 0.4em;
+        text-align: center;
+    }
+    
+    .products-item img {
+        object-fit: cover;
+        padding: 15px;
+        width: 80%;
+        max-width: 65%;
+    }
+    
+    .products-item h3 {
+        align-items: center;
+        font-size: 0.3em;
+    }
+    
+    .products-item p {
+        font-size: 0.2em;
+    }
+
+    .product-info {
+        padding: 1em;
+        height: 50px;
+    }
+    
+    .slide-back{
+        padding: 0;
+    }
+
+    .prev, .next{
+        padding: 10px;
+        font-size: 10px;
+    }
 }
+
 
 

@@ -15,21 +15,23 @@
         <header class="main-header">
             <div class="navbarpc">
                 <div class="name-logo">
-                    <img src="asset/images/Asset 1.png" alt="auditeria logo">
+                    <a href="index.html">
+                        <img src="asset/images/Asset 1.png" alt="auditeria logo">
+                    </a>
                 </div>
                 <nav class="main-navbar">
                     <ul class="navbar">
                         <li>
-                            <a class="navbar-link" href="#">Home</a>
+                            <a class="navbar-link" href="index.html">Home</a>
                         </li>
                         <li>
-                            <a class="navbar-link" href="#">Soundbank</a>
+                            <a class="navbar-link" href="pages/soundBank.html">Soundbank</a>
                         </li>
                         <li>
-                            <a class="navbar-link" href="#">About Us</a>
+                            <a class="navbar-link" href="pages/aboutUs.html">About Us</a>
                         </li>
                         <li>
-                            <a class="navbar-link" href="#">Help</a>
+                            <a class="navbar-link" href="pages/help.html">Help</a>
                         </li>
                     </ul>
                 </nav>
@@ -60,13 +62,13 @@
                                 <a class="navbar-link" href="#">Home</a>
                             </li>
                             <li>
-                                <a class="navbar-link" href="#">Soundbank</a>
+                                <a class="navbar-link" href="pages/soundBank.html">Soundbank</a>
                             </li>
                             <li>
-                                <a class="navbar-link" href="#">About Us</a>
+                                <a class="navbar-link" href="pages/aboutUs.html">About Us</a>
                             </li>
                             <li>
-                                <a class="navbar-link" href="#">Help</a>
+                                <a class="navbar-link" href="index.html">Help</a>
                             </li>
                         </ul>
                     </div>  
@@ -81,28 +83,47 @@
         </div>
 
         <div class="bottom-container">
-            <div class="products"> 
-                <div class="products-item">
+            <div class="products">
+                <div class="slide-back">
+                    <a class="prev" onclick="slide(-1)">&#10094;</a>
+                </div>
+                <div class="products-item" id="preview1">
                     <img src="asset/images/cover-sample2.jpg" alt="">
                     <div class="product-info">
                         <h3>BABY METAL BRAUNSCHWEIG</h3>
                         <p>deskripsi lagu</p>
                     </div>
                 </div>
-                <div class="products-item">
-                    <img src="asset/images/cover-sample2.jpg" alt="">
+                <div class="products-item" id="preview2">
+                    <img src="asset/images/Sempiternal.png" alt="">
                     <div class="product-info">
-                        <h3>BABY METAL AZHAR</h3>
+                        <h3>BABY METAL BRAUNSCHWEIG</h3>
                         <p>deskripsi lagu</p>
                     </div>
                 </div>
-                <div class="products-item">
+                <div class="products-item" id="preview3">
                     <img src="asset/images/cover-sample2.jpg" alt="">
                     <div class="product-info">
-                        <h3>BABY METAL AZHAR BRAUNSCHWEIG</h3>
+                        <h3>BABY METAL BRAUNSCHWEIG</h3>
                         <p>deskripsi lagu</p>
                     </div>
-                    
+                </div>
+                <div class="products-item" id="preview4">
+                    <img src="asset/images/That's the Spirit (digital).png" alt="">
+                    <div class="product-info">
+                        <h3>BABY METAL BRAUNSCHWEIG</h3>
+                        <p>deskripsi lagu</p>
+                    </div>
+                </div>
+                <div class="products-item" id="preview5">
+                    <img src="asset/images/cover-sample2.jpg" alt="">
+                    <div class="product-info">
+                        <h3>BABY METAL BRAUNSCHWEIG</h3>
+                        <p>deskripsi lagu</p>
+                    </div>
+                </div>
+                <div class="slide-next">
+                    <a class="next" onclick="add(1)">&#10095;</a>
                 </div>
             </div>
         </div>
@@ -113,5 +134,6 @@
     </div>
 
     <script src="asset/js/switch.js"></script>
+    <script src=""></script>
 </body>
 </html>
