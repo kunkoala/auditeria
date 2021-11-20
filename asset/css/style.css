@@ -229,12 +229,18 @@ html, body {
     color: white;
     position: relative;
     text-align: center;
-
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--ff-accent);
+    padding: 1em 0;
 }
+
 
 .subscribe-newsletter {
     margin: 0 auto;
-    padding: 1em;
+    padding: 0;
     text-align: center;
     background: #0f0f0f;
 }
@@ -270,7 +276,7 @@ html, body {
 
 .submit-button {
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto;
     font-size: 0.68em;
     border: none;
     color: white;
@@ -287,47 +293,72 @@ html, body {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
+.img-footer img{
+    width: 150px;
+}
+
 .contact-info {
     font-size: 0.9em;
     letter-spacing: 0.08em;
-    margin: 0;
+    margin: 0.9em 0 0 0;
 }
 
+.follow-title{
+    margin: 0 auto;
+    text-align: center;
+}
 
 .social-media-list {
+    
+
+    list-style: none;
+}
+
+.social-media-list li {
     display: inline-grid;
     align-items: center;
-    grid-template-columns: 48px 48px;
-    grid-gap: 10px;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
+    grid-template-columns: 50% 50% 50%;
+    grid-gap: 20px;
+    font-size: 2em;
+}
+.social-media-list i{
+    color: #F7F6F2;
+    transition: all 600ms;
 }
 
-.social-media-list img {
-    width: 28px;
+.social-media-list i:hover{
+    color: #e12bad;
 }
-
 
 .footer-navlist {
-    padding: 8px;
-    display: block;
+    padding: 8px 0 0 0;
     list-style: none;
-    margin: 15px auto;
+    margin: 0;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 10px;
+}
+
+
+.footer-navlist li {
+    font-size: 0.6em;
+    letter-spacing: 0.18em;
+    list-style: none;
     
 }
 
-.footer-navlist li {
-    display: inline-block;
-    font-size: 0.75em;
-    letter-spacing: 0.18em;
-}
-
 .footer-navlist li a {
-    margin: 0 20px;
     text-transform: uppercase;
     text-decoration: none;
     color: #F7F6F2
+   
+}
+.border{
+    border-bottom: #F7F6F2 solid;
+    border-width: 2px;
+    width: fit-content;
+    text-align: center;
 }
 
 
