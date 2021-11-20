@@ -222,7 +222,116 @@ html, body {
 
 
 
-/* ------------------------------ FOOTER ----------------------------*/
+/* =========================== FOOTER ============================*/
+
+.footer-main {
+    background-color: #0f0f0f;
+    color: white;
+    position: relative;
+    text-align: center;
+
+}
+
+.subscribe-newsletter {
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    background: #0f0f0f;
+}
+
+.footer-join-heading {
+    font-size: 0.9em;
+    margin-bottom: 0.7em;
+    letter-spacing: 0.15em;
+}
+
+.input-email[type=text] {
+    text-align: center;
+    width: 230px;
+    background: #F7F6F2;
+    margin-bottom: 16px;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    border-width: 0 0 1px;
+    outline: 0;
+    letter-spacing: 0.1em;
+    transition: all 0.85s;
+}
+
+.input-email:placeholder-shown {
+    font-size: 0.73em;
+    letter-spacing: 0.2em;
+}
+
+.input-email:placeholder-shown:not(:focus) {
+    background: #0f0f0f;
+}
+
+.submit-button {
+    display: block;
+    margin: 0 auto 10px;
+    font-size: 0.68em;
+    border: none;
+    color: white;
+    background:#0f0f0f;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.footer-info {
+    width: 100%;
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.contact-info {
+    font-size: 0.9em;
+    letter-spacing: 0.08em;
+    margin: 0;
+}
+
+
+.social-media-list {
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: 48px 48px;
+    grid-gap: 10px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.social-media-list img {
+    width: 28px;
+}
+
+
+.footer-navlist {
+    padding: 8px;
+    display: block;
+    list-style: none;
+    margin: 15px auto;
+    
+}
+
+.footer-navlist li {
+    display: inline-block;
+    font-size: 0.75em;
+    letter-spacing: 0.18em;
+}
+
+.footer-navlist li a {
+    margin: 0 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F7F6F2
+}
+
+
+/*------------------------ COPYRIGHT -------------------------*/
 
 .copyright {
     margin: 0;
