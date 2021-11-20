@@ -1,0 +1,174 @@
+.aboutUs{
+
+}
+
+/*---------- Layer COMPANY ---------*/
+.companyDes{
+    background: #F7F6F2;
+    padding: 0 0 3em 0;
+}
+
+.titleCompany h1{
+    text-align: center;
+    margin: 0;
+    padding: 0.5em 0 0.5em 0;
+    font-size: 3em;
+}
+
+.desCompany h3{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+
+/*---------- Layer Visi Misi ---------*/
+
+.vismisStory{
+    background: #F7F6F2;
+    padding: 1em 3em;
+}
+
+.vismis{
+    display: grid;
+    align-items: center;
+    grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
+      1em,
+      1fr
+    );
+    grid-gap: 5em;
+    justify-items: stretch;
+    padding: 1em 0;
+}
+
+.vismisImage img{
+    left: 0;
+}
+
+.vismisDes h2{
+    font-size: 1.5em;
+    margin: 0;
+    color: #212121;
+}
+
+.vismisDes p{
+    font-size: 1.2em;
+    padding: 1em 0;
+}
+
+
+.storyCompany{
+    display: grid;
+    align-items: center;
+    grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
+      1em,
+      1fr
+    );
+    grid-gap: 5em;
+    justify-items: stretch;
+    padding: 1em 0;
+}
+
+.storyDes h2{
+    font-size: 1.5em;
+    margin: 0;
+    color: #212121;
+}
+
+.storyDes p{
+    font-size: 1.2em;
+    padding: 1em 0;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.from-left{
+    grid-column: 2/3;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.from-right{
+    grid-column: 3/4;
+    transform: translateX(50%);
+}
+
+.from-left{
+    transition: transform 600ms ease-in;
+}
+.from-right{
+    transition: transform 600ms ease-in;
+}
+
+.from-left.appear{
+    transform: translateX(0);
+}
+
+.from-right.appear{
+    transform: translateX(0);
+}
+
+
+
+/*---------- Layer Meet Team ---------*/
+.meetTeam-wrapper{
+    background: #212121;
+    padding: 1em 0;
+}
+
+.meetTeamTitle h2{
+    color: azure;
+    text-align: center;
+}
+
+.meetTeamItem{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: space-evenly;
+    padding: 1em 0;
+}
+
+.personel{
+    text-align: center;
+}
+
+.personContact h4{
+    color: azure;
+    margin: 0;
+}
+
+.personContact p{
+    margin: 0;
+    color: azure;
+}
+
+
+
+/*---------- Responsiv Tablet ---------*/
+@media (min-width: 768px) and (max-width: 1024px){
+    .vismis{
+        display: block;
+        text-align: center;
+    }
+
+    .storyCompany{
+        border-top: solid #212121;
+        display: block;
+        text-align: center;
+    }
+
+    .fade-in{
+        opacity: 1;
+    }
+    .from-left, .from-right{
+        transform: translateX(0);
+    }
+}
