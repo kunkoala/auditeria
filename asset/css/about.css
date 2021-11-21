@@ -1,25 +1,37 @@
-.aboutUs{
+:root {
+    font-size: 1em;
+    background-color: #F7F6F2;
+    box-sizing: border-box;
 
+    --ff-primary: "PT Sans", sans-serif;
+    --ff-accent: 'Noto Sans', sans-serif;
+    --ff-alternate: 'Karla', sans-serif;
+}
+
+.aboutUs{
+    font-family: var(--ff-accent);
 }
 
 /*---------- Layer COMPANY ---------*/
 .companyDes{
-    background: #F7F6F2;
-    padding: 0 0 3em 0;
+    background-image: url("../images/about-background.jpg");
+    color: #F7F6F2;
+    padding: 16em 0;
 }
 
 .titleCompany h1{
     text-align: center;
     margin: 0;
     padding: 0.5em 0 0.5em 0;
-    font-size: 3em;
+    font-size: 3.5em;
+    letter-spacing: 0.2em;
 }
 
 .desCompany h3{
     text-align: center;
     margin: 0;
     padding: 0;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 
@@ -42,7 +54,8 @@
     padding: 1em 0;
 }
 
-.vismisImage img{
+.vismisImage {
+    width: 500px;
     left: 0;
 }
 
