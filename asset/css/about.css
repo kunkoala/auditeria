@@ -186,3 +186,95 @@
         transform: translateX(0);
     }
 }
+
+@media (min-width: 320px) and (max-width: 767px){
+    
+    .titleCompany h1{
+        font-size: 2em;
+    }
+
+    .desCompany h3{
+        font-size: 1em;
+    }
+    
+    .vismis{
+        display: block;
+        text-align: center;
+    }
+
+    .vismis img{
+        width: 150px;
+    }
+
+
+    .storyCompany{
+        border-top: solid #212121;
+        display: block;
+        text-align: center;
+    }
+    .storyCompany img{
+        width: 150px;
+    }
+
+    .fade-in{
+        opacity: 1;
+    }
+    .from-left, .from-right{
+        transform: translateX(0);
+    }
+
+    .meetTeamItem{
+        justify-content: space-around;
+        justify-items: center;
+    }
+
+    .personalImage img{
+        width: 80px;
+    }
+
+    .personContact h4{
+        font-size: 0.8em;
+    }
+    .personContact p{
+        font-size: 0.6em;
+    }
+
+    .footer-main{
+        display: block;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+
+    .footer-mid{
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    .footer-rigth{
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+
+    .img-footer{
+        display: none;
+    }
+
+
+
+}
+
